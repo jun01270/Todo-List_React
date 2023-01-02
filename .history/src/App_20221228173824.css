@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.todo-list {
+  height: 1200px;
+  font-size: xx-large;
+}
+
+.Todo-Form {
+  margin-top: 300px;
+}
+
+.btn {
+  margin-left: 5px;
+}

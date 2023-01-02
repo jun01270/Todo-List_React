@@ -1,10 +1,10 @@
 import "./App.css";
-import Todo from "./todo";
+import PracticeTodoList from "./todo";
 
 function App() {
   return (
     <>
-      <Todo />
+      <PracticeTodoList />
     </>
   );
 }

@@ -1,14 +1,21 @@
-#todo {
+.todo {
   font-family: "Nanum Pen Script", cursive;
   font-size: x-large;
   display: flex;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
+}
+
+.todo-Form {
+}
+
+.todo-title {
+  text-align: center;
 }
 
 .todo-items {
-  margin-left: 600px;
+  text-align: center;
   width: 500px;
+  height: 500px;
   border: 1px solid lightblue;
 }

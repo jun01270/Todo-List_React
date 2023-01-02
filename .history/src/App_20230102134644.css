@@ -1,0 +1,19 @@
+.todo {
+  text-align: center;
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.todo-all {
+  font-size: xx-large;
+}
+
+.todo-Form {
+}
+
+.todo-title {
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.todo-items {
+  border: 1px solid lightblue;
+}

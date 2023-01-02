@@ -4,11 +4,17 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  flex-direction: column;
+}
+
+.todo-Form {
+}
+
+.todo-title {
 }
 
 .todo-items {
-  margin-left: 600px;
+  margin-top: 20px;
   width: 500px;
+  height: 500px;
   border: 1px solid lightblue;
 }
