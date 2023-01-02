@@ -12,7 +12,6 @@ function Todo() {
 
   const handleTodo = (e) => {
     setTodoItems([...todoItems, inputValue]);
-    increase();
   };
 
   const deleteTodo = () => {
@@ -39,7 +38,7 @@ function Todo() {
       <div className="todo-items">
         <ul>할 일 목록</ul>
         {todoItems.map((todos) => (
-          <div id={keyValue}>{todos}</div>
+          <div id={todoItems.keys}>{todos}</div>
         ))}
       </div>
     </div>

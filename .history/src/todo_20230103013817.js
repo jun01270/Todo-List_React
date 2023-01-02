@@ -12,7 +12,6 @@ function Todo() {
 
   const handleTodo = (e) => {
     setTodoItems([...todoItems, inputValue]);
-    increase();
   };
 
   const deleteTodo = () => {

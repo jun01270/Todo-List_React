@@ -4,7 +4,6 @@ import "./App.css";
 function Todo() {
   const [inputValue, setInputValue] = useState("");
   const [todoItems, setTodoItems] = useState([]);
-  const [keyValue, keyState] = useState(0);
 
   const handleInput = (e) => {
     setInputValue(e.target.value);
@@ -12,15 +11,10 @@ function Todo() {
 
   const handleTodo = (e) => {
     setTodoItems([...todoItems, inputValue]);
-    increase();
   };
 
   const deleteTodo = () => {
     setTodoItems([]);
-  };
-
-  const increase = () => {
-    keyState(keyValue + 1);
   };
 
   return (
@@ -32,6 +26,7 @@ function Todo() {
           placeholder="할 일을 입력하시오"
           onChange={handleInput}
           value={inputValue}
+          required
         ></input>
         <button onClick={handleTodo}>입력</button>
         <button onClick={deleteTodo}>삭제</button>
@@ -39,7 +34,7 @@ function Todo() {
       <div className="todo-items">
         <ul>할 일 목록</ul>
         {todoItems.map((todos) => (
-          <div id={keyValue}>{todos}</div>
+          <div id={todoItems.keys}>{todos}</div>
         ))}
       </div>
     </div>

@@ -4,7 +4,6 @@ import "./App.css";
 function Todo() {
   const [inputValue, setInputValue] = useState("");
   const [todoItems, setTodoItems] = useState([]);
-  const [keyValue, keyState] = useState(0);
 
   const handleInput = (e) => {
     setInputValue(e.target.value);
@@ -12,17 +11,13 @@ function Todo() {
 
   const handleTodo = (e) => {
     setTodoItems([...todoItems, inputValue]);
-    increase();
   };
 
   const deleteTodo = () => {
     setTodoItems([]);
   };
 
-  const increase = () => {
-    keyState(keyValue + 1);
-  };
-
+  let KEY = KEY + 1;
   return (
     <div id="todo">
       <h1>투 두 리스트</h1>
@@ -39,7 +34,7 @@ function Todo() {
       <div className="todo-items">
         <ul>할 일 목록</ul>
         {todoItems.map((todos) => (
-          <div id={keyValue}>{todos}</div>
+          <div key={KEY}>{todos}</div>
         ))}
       </div>
     </div>
