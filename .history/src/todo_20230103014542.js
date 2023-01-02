@@ -5,7 +5,7 @@ function Todo() {
   const [inputValue, setInputValue] = useState("");
   const [todoItems, setTodoItems] = useState([]);
   const [keyValue, keyState] = useState(0);
-  const [key, inputKey] = useState([]);
+  const [key, inputkey] = useState([]);
 
   const handleInput = (e) => {
     setInputValue(e.target.value);
@@ -13,8 +13,7 @@ function Todo() {
 
   const handleTodo = (e) => {
     setTodoItems([...todoItems, inputValue]);
-    keyState(keyValue + 1);
-    inputKey([...key, keyValue]);
+    inputkey([...key, keyValue]);
   };
 
   const deleteTodo = () => {

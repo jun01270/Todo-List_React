@@ -4,7 +4,7 @@ import "./App.css";
 function Todo() {
   const [inputValue, setInputValue] = useState("");
   const [todoItems, setTodoItems] = useState([]);
-  const [keyValue, keyState] = useState(0);
+  const [keyValue, keyState] = useState(keyValue + 1);
   const [key, inputKey] = useState([]);
 
   const handleInput = (e) => {
@@ -13,8 +13,8 @@ function Todo() {
 
   const handleTodo = (e) => {
     setTodoItems([...todoItems, inputValue]);
-    keyState(keyValue + 1);
     inputKey([...key, keyValue]);
+    keyState();
   };
 
   const deleteTodo = () => {

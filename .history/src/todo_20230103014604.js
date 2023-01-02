@@ -13,7 +13,6 @@ function Todo() {
 
   const handleTodo = (e) => {
     setTodoItems([...todoItems, inputValue]);
-    keyState(keyValue + 1);
     inputKey([...key, keyValue]);
   };
 
